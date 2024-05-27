@@ -42,7 +42,7 @@ public class CardDeliveryTest {
         $("[data-test-id='date'] input").click();
 
         if (!generateDate(3, "MM").equals(generateDate(7, "MM"))) {
-            $("body > div.popup.popup_direction_bottom-left.popup_target_anchor.popup_size_s.popup_visible.popup_padded.popup_theme_alfa-on-white > div > div > div > div > div > div > div:nth-child(4)").click();
+            $("[data-step='1']").click();
         }
         $$("[data-day]").findBy(Condition.text(generateDate(7, "d"))).click();
 
